@@ -4,7 +4,7 @@ programa
 	inclua biblioteca Arquivos --> arq
 	
 	inteiro func
-	logico tem_arquivo = falso
+	logico tem_arquivo = falso 
 
 	funcao inicio()
 	{
@@ -25,12 +25,13 @@ programa
 	     }
 			
      }
+ 
     funcao processar()
     {
     	 cadeia linha
     	 inteiro conta = 0,qt = 0
     	 
-    	 enquanto(nao arq.fim_arquivo(func))
+    	 enquanto(nao arq.fim_arquivo(func) )
     	 {
     	    linha = arq.ler_linha(func)
     	    qt = txt.numero_caracteres(linha)
@@ -53,7 +54,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 875; 
+ * @POSICAO-CURSOR = 125; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
