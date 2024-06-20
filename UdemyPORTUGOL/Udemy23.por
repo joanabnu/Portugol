@@ -28,18 +28,23 @@ programa
     funcao processar()
     {
     	 cadeia linha
-    	 inteiro qt = 0
+    	 inteiro conta = 0,qt = 0
+    	 
     	 enquanto(nao arq.fim_arquivo(func))
     	 {
     	    linha = arq.ler_linha(func)
     	    qt = txt.numero_caracteres(linha)
     	    se(qt>0){
          escreva(linha," - ", qt ,"\n")
+         conta++
     	    }
+    	   
     	 }
+    	 escreva("\n Total de registro lidos : " , conta)
     }
     funcao finalizar()
     {
+    	
     	  arq.fechar_arquivo(func)
     }
  }
@@ -48,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 693; 
+ * @POSICAO-CURSOR = 875; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
